@@ -11,7 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
     max-width: 1440px;
     height: 100vh;
-    margin: 2% 5% 5% 5%;
+    margin: 2% 8% 8% 8%;
 }
 
 :root {
@@ -25,11 +25,14 @@ body {
     --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
+/* Cabecalho */
+
 header {
-    /* width: 100%; */
-    width: 1440px;
+    width: 100%;
+    /* width: 1440px; */
     display: flex;
     align-items: center;
+    margin: 0 0 4% 0;
 }
 
 .logo {
@@ -38,7 +41,7 @@ header {
 }
 
 .logo > img {
-    cursor: pointer;
+    cursor: pointer
 }
 
 menu {
@@ -60,4 +63,18 @@ menu li:last-child {
 
 .menu-icon {
     display: none;
+}
+
+/* Conteúdo principal */
+
+main {
+    float: left;
+    width: 70%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.main-img {
+    width: 100%;
+    margin: 0 0 2% 0;
 }

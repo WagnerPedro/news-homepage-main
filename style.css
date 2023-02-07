@@ -17,6 +17,7 @@ body {
 p {
     font-size: 15px;
     font-weight: 400;
+    user-select: none;
 }
 
 :root {
@@ -91,6 +92,7 @@ main {
     color: var(--Very-dark-blue);
     font-weight: 800;
     line-height: 62px;
+    user-select: none;
 }
 
 .main-article p {
@@ -109,4 +111,6 @@ main button {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
+    cursor: pointer;
+    margin-top: 4%;
 }

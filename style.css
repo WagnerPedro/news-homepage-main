@@ -11,17 +11,53 @@ body {
     font-family: 'Inter', sans-serif;
     max-width: 1440px;
     height: 100vh;
-    margin: 2.5% 5% 5% 5%;
+    margin: 2% 5% 5% 5%;
 }
 
 :root {
     /* Cores primárias */
-    --Soft-orange: hsl(35, 77%, 62%)
-    --Soft-red: hsl(5, 85%, 63%)
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
     /* Cores Neutras */
-    --Off-white: hsl(36, 100%, 99%)
-    --Grayish-blue: hsl(233, 8%, 79%)
-    --Darko-grayish blue: hsl(236, 13%, 42%)
-    --Very-dark blue: hsl(240, 100%, 5%)
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Darko-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
+header {
+    /* width: 100%; */
+    width: 1440px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    float: left;
+    width:  50%;
+}
+
+.logo > img {
+    cursor: pointer;
+}
+
+menu {
+    float: right;
+    width: 50%;
+    list-style-type: none;
+}
+
+menu li {
+    float: right;
+    margin: 0 2%;
+    cursor: pointer;
+    color: var(--Darko-grayish-blue);
+}
+
+menu li:last-child {
+    margin-right: 0;
+}
+
+.menu-icon {
+    display: none;
+}

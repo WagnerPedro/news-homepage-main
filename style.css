@@ -127,6 +127,8 @@ main button:hover {
     background-color: var(--Very-dark-blue);
 }
 
+/* Conteúdo lateral */
+
 aside {
     background-color: var(--Very-dark-blue);
     color: var(--Off-white);
@@ -134,8 +136,36 @@ aside {
     width: 24%;
     float: right;
     margin-left: 0;
+    height: 57%;
 }
 
 article {
     clear: both;
+}
+
+
+aside h1 {
+    color: var(--Soft-orange);
+    font-size: 2em;
+    padding: 0 .2% 9% 2%;
+}
+
+.aside-content h2 {
+    font-size: 1.2em;
+    margin-bottom: 4%;
+} 
+
+.aside-content h2:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.aside-content p {
+    font-weight: lighter;
+}
+
+hr {
+    margin: 10% 0;
+    outline: none;
+    border-width: 0.2px;
 }

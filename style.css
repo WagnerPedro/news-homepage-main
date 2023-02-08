@@ -81,6 +81,7 @@ main {
     float: left;
     width: 74%;
     margin-right: 2%;
+    margin-bottom: 3%;
     padding-right: 0;
 }
 
@@ -168,4 +169,20 @@ hr {
     margin: 10% 0;
     outline: none;
     border-width: 0.2px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 5%;
+    clear: both;
+    background-color: aqua;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content {
+
 }

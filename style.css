@@ -63,6 +63,10 @@ menu li {
     color: var(--Darko-grayish-blue);
 }
 
+menu li:hover {
+    color: var(--Soft-red);
+}
+
 menu li:last-child {
     margin-right: 0;
 }
@@ -76,7 +80,7 @@ menu li:last-child {
 main {
     float: left;
     width: 70%;
-    margin-right: 0;
+    margin-right: 2%;
     padding-right: 0;
 }
 
@@ -117,4 +121,8 @@ main button {
     letter-spacing: 4px;
     cursor: pointer;
     margin-top: 4%;
+}
+
+main button:hover {
+    background-color: var(--Very-dark-blue);
 }

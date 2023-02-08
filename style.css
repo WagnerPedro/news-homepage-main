@@ -79,7 +79,7 @@ menu li:last-child {
 
 main {
     float: left;
-    width: 70%;
+    width: 74%;
     margin-right: 2%;
     padding-right: 0;
 }
@@ -125,4 +125,17 @@ main button {
 
 main button:hover {
     background-color: var(--Very-dark-blue);
+}
+
+aside {
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 2%;
+    width: 24%;
+    float: right;
+    margin-left: 0;
+}
+
+article {
+    clear: both;
 }

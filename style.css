@@ -71,7 +71,7 @@ menu li:last-child {
     margin-right: 0;
 }
 
-.menu-icon {
+.burguerMenu {
     display: none;
 }
 
@@ -137,7 +137,7 @@ aside {
     width: 24%;
     float: right;
     margin-left: 0;
-    height: 57%;
+    height: 415px;
 }
 
 article {
@@ -218,18 +218,54 @@ footer .footer-content {
     margin: 7% 0;
 }
 
-/* Mobile 375px */
+/* Mobile 375-tablepx */
+
 @media screen and (max-width: 880px) {
     .logo img {
         width: 25%;
     }
 
-    menu li {
-        display: none;
+    menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--Off-white);
+        width: 60%;
+        height: 1500px;
+        display: none; /*flex*/
+        flex-direction: column;
+        padding-top: 260px;
     }
 
-    .menu-icon {
+    menu li {
+        color: var(--Very-dark-blue);
+        padding: 2%;
+        margin-top: 5%;
+        margin: 0 0 0 4%;
+        font-size: 2em;
+        font-weight: 400;
+        width: fit-content;
+    }
+
+    menu li:not(.menu-icon):hover {
+        color: var(--Soft-red);
+    }
+
+    .burguerMenu {
+        position: fixed;
+        right: 0;
+        padding: 0 5% 0 0;
+        cursor: pointer;
         display: block;
+    }
+
+    .closeMenu {
+        position: fixed;
+        right: 0;
+        padding: 0 5% 0 0;
+        cursor: pointer;
+        display: block;
+        display: none;
     }
 
     main {

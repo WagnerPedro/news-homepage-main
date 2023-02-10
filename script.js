@@ -1,17 +1,13 @@
-const $firstSpan = document.getElementById("firstSpan")
-const $body = document.getElementsByTagName("body")[0]
-const $menuIcon = document.querySelector(".menu-icon")
+const $burguerMenu = document.querySelector(".burguerMenu")
+const menu = document.getElementsByTagName("menu")[0]
+const $menuImg = document.getElementById("imagem")
+const close = document.getElementById("close")
+const closeMenu =  document.querySelector(".closeMenu")
 
-(() => {
-    let breakRow = document.createElement("span")
-    breakRow.textContent = '/'
-    breakRow.style.opacity = '0'
-    $firstSpan.insertAdjacentElement("beforeend", breakRow)
+$burguerMenu.addEventListener("click", ()=> {
+    if(!$menuImg.setAttribute("src", "./assets/images/icon-menu.svg")) {
+        menu.style.display = 'flex'
+        $menuImg.setAttribute("src", "./assets/images/icon-menu-close.svg")
+    }
+    // console.log($menuImg)
 })
-
-
-$menuIcon.style.display = 'flex'
-
-// (()=>{
-//     $menuIcon
-// })
